@@ -1,4 +1,4 @@
-require('.config/config.js');
+require('./config/config.js');
 
 const _ = require('lodash');
 var express = require('express');
@@ -142,7 +142,7 @@ app.delete('/users/me/token', authenticate, (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Started on port ${port}`);
+  console.log(`*** Port: ${port}`);
 });
 
 module.exports = {app};
